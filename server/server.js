@@ -5,7 +5,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 
 var port = 3000;
-var apiUrl = 'https://api.themoviedb.org/3';  // URL to web api
+var host = 'api.themoviedb.org';
 var apikey = 'd272326e467344029e68e3c4ff0b4059';
 var locale='language=en-US';
 var db = './server/db.json';
