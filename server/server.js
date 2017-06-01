@@ -8,14 +8,14 @@ var port = 3000;
 var apiUrl = 'https://api.themoviedb.org/3';  // URL to web api
 var apikey = 'd272326e467344029e68e3c4ff0b4059';
 var locale='language=en-US';
+var db = './server/db.json';
+
+//api calls
 var getMovie = '/movie/:id';
 var addFavourite = '/favourite/:id';
 var updateFavourite = '/favourite/:id';
 var deleteFavourite = '/favourite/:id';
 var getFavourites = '/favourites';
-var host = 'api.themoviedb.org';
-var apikey = 'd272326e467344029e68e3c4ff0b4059';
-var db = './server/db.json';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
